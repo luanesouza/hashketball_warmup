@@ -2,43 +2,71 @@ require 'pry'
 
 
 # BONUS METHOD
-# def crazy_laws
-# # Which of these laws do not belong?
-#   {
-#     :states =>
-#       [
-#       alabama: {
-#         :law => 'it\'s illegal to drive blindfolded',
-#         crazy: true
-#       },
-#       alaska: {
-#         :law => 'you can\'t put an animal in the back of an open vehicle',
-#         crazy: true
-#       },
-#       arizona: {
-#         :law => 'it\'s illegal for a donkey to sleep in a bathtub',
-#         crazy: true
-#       },
-#       arkansas: {
-#         :law => 'you can\'t honk your horn near a sandwich shop after 9 p.m',
-#         :crazy => false
-#       },
-#       california: {
-#         :law => 'plastic bags are banned',
-#         :crazy => false
-#       },
-#       colorado: {
-#         :law => 'it\'s illegal to keep a couch on your porch',
-#         :crazy => true
-#       },
-#       connecticut: {
-#         :law => 'a pickle must be able to bounce',
-#         :crazy => false
-#       }
-#     ]
-#   }
+def crazy_laws
+# Which of these laws do not belong?
+  {
+    :states =>
+      [
+      alabama: {
+        :law => 'it\'s illegal to drive blindfolded',
+        crazy: true
+      },
+      alaska: {
+        :law => 'you can\'t put an animal in the back of an open vehicle',
+        crazy: true
+      },
+      arizona: {
+        :law => 'it\'s illegal for a donkey to sleep in a bathtub',
+        crazy: true
+      },
+      arkansas: {
+        :law => 'you can\'t honk your horn near a sandwich shop after 9 p.m',
+        :crazy => false
+      },
+      california: {
+        :law => 'plastic bags are banned',
+        :crazy => false
+      },
+      colorado: {
+        :law => 'it\'s illegal to keep a couch on your porch',
+        :crazy => true
+      },
+      connecticut: {
+        :law => 'a pickle must be able to bounce',
+        :crazy => false
+      }
+    ]
+  }
+end
+
+# def only_crazy_laws
+#   crazy_laws[:states].map do |state|
+#     state.values.select do |law|
+#       # binding.pry
+#       law[:crazy]
+#     end
+#   end
 # end
 
+# def print_states_info
+#   stateInformation = crazy_laws[:states].map do |stateInfo|
+#     stateInfo.values
+#   end
+#   print_lawInfo(stateInformation)
+# end
+#
+# def print_lawInfo(stateInformation)
+#   stateInformation.map do |lawInfo|
+#     lawInfo.select do |law|
+#       law[:crazy]
+#       print_law(law[:law])
+#     end
+#   end
+# end
+#
+# def print_law(law)
+#   p law
+# end
 
 instructors = [
   {
