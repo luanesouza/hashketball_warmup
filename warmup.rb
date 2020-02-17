@@ -1,6 +1,8 @@
 require 'pry'
+
+# ------- BONUS -------
 def crazy_laws
-# Which of these laws do not belong?
+# RETURN ONLY THE CRAZY LAWS
   {
     :states =>
       [
