@@ -1,40 +1,43 @@
 require 'pry'
-def crazy_laws
-# Which of these laws do not belong?
-  {
-    :states =>
-      [
-      alabama: {
-        :law => 'it\'s illegal to drive blindfolded',
-        crazy: true
-      },
-      alaska: {
-        :law => 'you can\'t put an animal in the back of an open vehicle',
-        crazy: true
-      },
-      arizona: {
-        :law => 'it\'s illegal for a donkey to sleep in a bathtub',
-        crazy: true
-      },
-      arkansas: {
-        :law => 'you can\'t honk your horn near a sandwich shop after 9 p.m',
-        :crazy => false
-      },
-      california: {
-        :law => 'plastic bags are banned',
-        :crazy => false
-      },
-      colorado: {
-        :law => 'it\'s illegal to keep a couch on your porch',
-        :crazy => true
-      },
-      connecticut: {
-        :law => 'a pickle must be able to bounce',
-        :crazy => false
-      }
-    ]
-  }
-end
+
+
+# BONUS METHOD
+# def crazy_laws
+# # Which of these laws do not belong?
+#   {
+#     :states =>
+#       [
+#       alabama: {
+#         :law => 'it\'s illegal to drive blindfolded',
+#         crazy: true
+#       },
+#       alaska: {
+#         :law => 'you can\'t put an animal in the back of an open vehicle',
+#         crazy: true
+#       },
+#       arizona: {
+#         :law => 'it\'s illegal for a donkey to sleep in a bathtub',
+#         crazy: true
+#       },
+#       arkansas: {
+#         :law => 'you can\'t honk your horn near a sandwich shop after 9 p.m',
+#         :crazy => false
+#       },
+#       california: {
+#         :law => 'plastic bags are banned',
+#         :crazy => false
+#       },
+#       colorado: {
+#         :law => 'it\'s illegal to keep a couch on your porch',
+#         :crazy => true
+#       },
+#       connecticut: {
+#         :law => 'a pickle must be able to bounce',
+#         :crazy => false
+#       }
+#     ]
+#   }
+# end
 
 
 instructors = [
@@ -64,13 +67,19 @@ def print_instructors_older_than_5(instructors)
 end
 
 
-array_of_integers = [1, 2, 3, 4, 5]
-def double_nums(number_array)
+def double_nums
+  array_of_integers = [1, 2, 3, 4, 5]
  # multiply every integer by 4
+  array_of_integers.map do |integer|
+    integer * 4
+  end
 end
 
 def print_number_greater_than_10
   # using your new array from double_nums, only return numbers that are greater than 10
+  double_nums.select do |number|
+    number > 10
+  end
 end
 
 binding.pry
