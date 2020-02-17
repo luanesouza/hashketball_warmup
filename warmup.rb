@@ -64,9 +64,9 @@ def print_instructors_older_than_5(instructors)
 end
 
 
-array_of_integers = [1, 2, 3, 4, 5]
 def double_nums
  # multiply every integer by 4
+ array_of_integers = [1, 2, 3, 4, 5]
  binding.pry
 end
 
