@@ -65,8 +65,9 @@ end
 
 
 array_of_integers = [1, 2, 3, 4, 5]
-def double_nums(number_array)
+def double_nums
  # multiply every integer by 4
+ binding.pry
 end
 
 def print_number_greater_than_10
