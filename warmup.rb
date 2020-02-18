@@ -39,31 +39,49 @@ def crazy_laws
 end
 
 
+# What to get from this exercise:
+# When to use .find, .map, .select
+# How to resuse methods
+
 instructors = [
   {
-    name: 'Annie', country: 'Brazil', age: 3, languages: 'Spanish, Portuguese, Russian, English'
+    name: 'Annie', country: 'Brazil', age: 3, languages: ['Spanish', 'Portuguese', 'Russian', 'English']
   },
   {
-    name: 'Graham', country: 'USA', age: 5, languages: 'Spanish, English, French'
+    name: 'Graham', country: 'USA', age: 5, languages: ['Spanish', 'English', 'French']
   },
   {
-    name: 'Jack', country: 'USA', age: 13, languages: 'English, French'
+    name: 'Jack', country: 'USA', age: 13, languages: ['English', 'French']
   }
 ]
+
 def print_your_instructors_name(instructors)
-    instructors.map do |instructor|
-      instructor[:name]
-    end
   # Your job is to print the name of your instructors
 end
 
 def print_instructors_older_than_5(instructors)
   # print only the instructors name that are over the age of 5
-  olderInstructors = instructors.select do |instructor|
-    instructor[:age] > 5
-  end
-   print_your_instructors_name(olderInstructors)
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 def double_nums
